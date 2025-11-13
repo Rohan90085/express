@@ -22,4 +22,8 @@ const users=require('./usersdata.json');
         </ul>`;
         res.send(html);
     })
+
+    app.get('/userr',(req,res)=>{
+        res.send("regex user route");
+    })
     app.listen(3000,()=>console.log("server started"));
