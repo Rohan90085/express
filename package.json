@@ -2,10 +2,10 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "postmethod.js",
+  "main": "patchmethod.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node postmethod.js"
+    "start": "node patchmethod.js"
   },
   "author": "",
   "license": "ISC",
