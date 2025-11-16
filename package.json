@@ -2,10 +2,10 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "exp2userid.js",
+  "main": "n.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node exp2userid.js"
+    "start": "node n.js"
   },
   "author": "",
   "license": "ISC",
