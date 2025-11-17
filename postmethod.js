@@ -14,7 +14,7 @@ app.post('/user/add',(req,res)=>{
     users.push(newUser);
     fs.writeFile('./usersdata.json',JSON.stringify(users),err=>{
         if(err){
-            res.status(500).json({msg:"not added"});
+            res.status(201).json({msg:"not added"});
         }
         res.send(newUser);
     })

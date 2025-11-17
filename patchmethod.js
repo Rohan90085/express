@@ -12,7 +12,7 @@ app.patch("/user/update/:id", (req, res) => {
     const body = req.body;
     const userindex = users.findIndex(u => u.id === id);
     if (userindex === -1) {
-        return res.status(404).json({ msg: "user not found" });
+        return res.status(400).json({ msg: "user not found" });
     }
     // FIX 2
     users[userindex] = { ...users[userindex], ...body };
@@ -21,7 +21,7 @@ app.patch("/user/update/:id", (req, res) => {
              res.json({ msg: "not updated" });
         }
         
-        res.send(users[userindex]);
+        res.status(201).send(users[userindex]);
     });
 });
 

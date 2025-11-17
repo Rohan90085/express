@@ -2,10 +2,10 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "patchmethod.js",
+  "main": "getmethod.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon patchmethod.js"
+    "start": "nodemon getmethod.js"
   },
   "author": "",
   "license": "ISC",
