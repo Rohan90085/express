@@ -21,7 +21,7 @@ app.patch("/user/update/:id", (req, res) => {
              res.json({ msg: "not updated" });
         }
         
-        res.json(users[userindex]);
+        res.send(users[userindex]);
     });
 });
 
