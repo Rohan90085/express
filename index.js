@@ -10,7 +10,5 @@ rep.end(p);
         res.end(p.toString());
 
 });
-serever.listen(8000,()=>{
-    console.log("jai ganesha");
+serever.listen(8000,()=>console.log("jai ganesha"));
     
-});

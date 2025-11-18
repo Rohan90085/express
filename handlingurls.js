@@ -5,10 +5,12 @@ const server=http.createServer((req,res)=>{
     console.log(myurl);
     switch(myurl.pathname){
         case "/":
+            res.statusCode=200;
             res.end("home page");
             break;
          case '/about':
             const name=url.query.myname;
+            res.statusCode(200)
             res.end("about page "+name);
             break;
             default:
