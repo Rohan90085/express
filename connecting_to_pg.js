@@ -38,7 +38,11 @@ app.post("/users", async (req, res) => {
 // GET: Get all users
 app.get("/users", async (req, res) => {
   const result = await pool.query("SELECT * FROM users");
-  res.json(result.rows);
+  let op="users list:\n"
+  result.rows.forEach((u)=>{
+    op +=`id:${u.id},name:${u.name},email:${u.email}\n`
+  });
+  res.send(op);
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));
