@@ -9,13 +9,14 @@ app.use(express.json());
 
 // EJS setup
 app.set("view engine", "ejs");
+app.set("views", "views");
 
 // PostgreSQL Connection
 const pool = new Pool({
     user: "postgres",
     host: "localhost",
-    database: "testdb",
-    password: "1234",
+    database: "jai ganesha",
+    password: "Rohanph@900",
     port: 5432
 });
 
