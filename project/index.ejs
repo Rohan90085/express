@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+</head>
+<body>
+
+    <h1>Add New User</h1>
+
+    <!-- Form to send data to Express -->
+    <form action="/user/add" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required />
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="text" name="email" required />
+
+        <br><br>
+
+        <button type="submit">Add User</button>
+    </form>
+
+</body>
+</html>
