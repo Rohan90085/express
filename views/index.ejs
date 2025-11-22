@@ -17,9 +17,14 @@
             border: none;
             border-radius: 5px;
         }
-        
+        .a1{
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
+<div class="a1">
+<div class="a2">
     <h1>Add New User</h1>
 
     <form action="/user/add" method="POST">
@@ -31,17 +36,20 @@
         <input type="email" name="email" required />
         <br><br>
 
-        <button type="submit">Add User</button>
+        <button type="submit" style="margin-left:55px">Add User</button>
     </form>
 
-    <hr>
-
+    </div>
+<div class="a3">
     <h2>User List</h2>
     <ul>
         <% users.forEach(user => { %>
             <li><%= user.name %> - <%= user.email %></li>
         <% }) %>
     </ul>
+    </div>
+</div>
+<hr>
 
 </body>
 </html>
