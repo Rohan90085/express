@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json()); // for JSON body
 app.use(express.urlencoded({ extended: false }));
 
-// Load users from JSON filekkf
+// Load users from JSON file
 let users = require('./usersdata.json');
 
 // GET all users
